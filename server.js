@@ -13,7 +13,7 @@ app.get('/typeahead', cors(corsOptions), require('./api/typeahead'));
 app.get('/resolver', cors(corsOptions), require('./api/resolver'));
 
 // if (process.env.NODE_ENV === 'production') {
-app.listen(9145);
+app.listen(process.env.PORT || 9145);
 // } else {
 //   var pem = require('pem');
 //   var https = require('https');
