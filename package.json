@@ -1,0 +1,21 @@
+{
+  "name": "mixmax-emoji",
+  "version": "1.0.0",
+  "description": "Slash command emojis from Mixmax email",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Daniel Noskin",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "cors": "^2.8.1",
+    "emojilib": "^2.1.0",
+    "express": "^4.15.2",
+    "pem": "^1.9.4",
+    "request": "^2.80.0",
+    "underscore": "^1.8.3"
+  }
+}
