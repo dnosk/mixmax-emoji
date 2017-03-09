@@ -30,8 +30,8 @@ module.exports = function(req, res) {
   } else {
     results.map(function(result) {
       res.json({
-        title: emoji.lib[result].char,
-        text: result
+        title: emoji.lib[result].char + ' ' + result,
+        text: emoji.lib[result].char
       });
     })
   }

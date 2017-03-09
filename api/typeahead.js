@@ -31,8 +31,8 @@ module.exports = function(req, res) {
     var response = _.chain(results)
       .map(function(result) {
         return {
-          title: emoji.lib[result].char,
-          text: result
+          title: emoji.lib[result].char + ' ' + result,
+          text: emoji.lib[result].char
         };
       })
       .value();
