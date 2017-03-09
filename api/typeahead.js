@@ -32,7 +32,7 @@ module.exports = function(req, res) {
       .map(function(result) {
         return {
           title: emoji.lib[result].char + '  ' + result,
-          text: emoji.lib[result].char
+          text: result
         };
       })
       .value();
