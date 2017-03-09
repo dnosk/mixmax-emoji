@@ -30,7 +30,7 @@ module.exports = function(req, res) {
   } else {
     results.map(function(result) {
       res.json({
-        body: '<p>' + '&#x2660;' + '</p>'
+        body: '<span class="emoji">' + emoji.lib[result].char + '</span>'
       });
     })
   }
